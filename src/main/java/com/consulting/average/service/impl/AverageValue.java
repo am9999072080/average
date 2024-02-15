@@ -2,7 +2,6 @@ package com.consulting.average.service.impl;
 
 import java.util.ArrayList;
 
-
 public interface AverageValue {
 
     /**

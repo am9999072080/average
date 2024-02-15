@@ -24,7 +24,6 @@ public class AverageValueImpl implements AverageValue {
             sum1 += q.get(i) * p.get(i);
             sum2 += p.get(i);
 
-
         }
         d = sum1 / sum2;
 

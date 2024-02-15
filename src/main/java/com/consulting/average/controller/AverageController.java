@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public class AverageController {
     private final AverageValueImpl service;
 
-
     @GetMapping("Weighted Average")
     @Operation(summary = "weightForEachDataPoint/valueOfEachDataPoint")
     public double calculatesTheWeightedAverage(@RequestParam ArrayList<Double> w,
