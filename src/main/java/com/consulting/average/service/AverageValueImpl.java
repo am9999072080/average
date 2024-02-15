@@ -18,9 +18,7 @@ public class AverageValueImpl implements AverageValue {
         double sum2 = 0.0;
         for (int i = 0; i < q.size(); i++) {
 
-            if (!q.get(i).toString().matches("[0-9]+.[0-9]") || !p.get(i).toString().matches("[0-9]+.[0-9]")) {
-                throw new RuntimeException("!!!invalid argument exception!!!");
-            }
+
             sum1 += q.get(i) * p.get(i);
             sum2 += p.get(i);
 

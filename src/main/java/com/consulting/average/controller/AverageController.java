@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
-
 @Tag(name = "CALCULATE THE WEIGHTED AVERAGE", description = "AverageController")
 @RequiredArgsConstructor
 @RestController
