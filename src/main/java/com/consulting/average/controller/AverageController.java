@@ -25,11 +25,4 @@ public class AverageController {
 
         return service.calculateWeightedAverage(w, v);
     }
-
-    @ExceptionHandler({RuntimeException.class})
-    public String errorNotification(RuntimeException e) {
-        String s = "INPUT ERROR. Enter numbers only! '[0-9]+.[0-9]'";
-        return s;
-    }
 }
-
