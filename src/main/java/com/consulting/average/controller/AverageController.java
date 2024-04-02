@@ -6,7 +6,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 
 @Tag(name = "CALCULATE THE WEIGHTED AVERAGE", description = "AverageController")
 @RequiredArgsConstructor
@@ -18,8 +17,8 @@ public class AverageController {
 
     @GetMapping("Weighted Average")
     @Operation(summary = "weightForEachDataPoint/valueOfEachDataPoint")
-    public double calculatesTheWeightedAverage(@RequestParam ArrayList<Double> w,
-                                               @RequestParam ArrayList<Double> v) {
+    public String calculatesTheWeightedAverage(@RequestParam double[] w,
+                                               @RequestParam double[] v) {
 
         return service.calculateWeightedAverage(w, v);
     }

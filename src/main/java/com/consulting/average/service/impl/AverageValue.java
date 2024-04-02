@@ -10,5 +10,5 @@ public interface AverageValue {
      * @return calculates the weighted average
      */
 
-    double calculateWeightedAverage(ArrayList<Double> q, ArrayList<Double> p);
+    public String calculateWeightedAverage(double[] q, double[] p);
 }
