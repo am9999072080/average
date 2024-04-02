@@ -23,7 +23,7 @@ public class AverageValueImpl implements AverageValue {
         }
         d = sum1 / sum2;
         String s = String.format("WeightedAverage = %.1f", d);
-        System.out.println("possible cases:");
+        System.out.println("Possible cases:");
         System.out.println("x\u2081>0, x\u2082=0,...x\u2099;\nx\u2081=0, x\u2082>0,...x\u2099;\nx\u2081>0, x\u2082>0,...x\u2099;");
         System.out.println("Formula for solution");
         System.out.println("WeightedAverage = (a\u2081*x\u2081+a\u2082*x\u2082+...+a\u2099*x\u2099) / (x\u2081+x\u2082+...+x\u2099)");
